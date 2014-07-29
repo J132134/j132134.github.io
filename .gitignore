@@ -1,0 +1,9 @@
+# Dependency directory
+node_modules
+
+# Sublime Text project files
+*.sublime-project
+*.sublime-workspace
+
+# Ignore bower components
+bower_components
