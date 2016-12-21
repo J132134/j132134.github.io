@@ -35,5 +35,4 @@ module.exports =
 
     base64:
       baseDir: __dirname
-      maxWeightResource: 1000000
-      extensionsAllowed: ['.woff', '.otf', '.jpg', '.png']
+      extensionsAllowed: ['.jpg', '.png']

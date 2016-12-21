@@ -91,7 +91,7 @@ gulp.task 'inline', ['jade', 'stylus', 'webpack'], ->
   .pipe gulp.dest dist.root
 
 gulp.task 'clean:after', ['inline'], ->
-  del [dist.css, dist.js, dist.img, dist.font]
+  del [dist.css, dist.js, dist.img]
 
 ## public tasks
 gulp.task 'default', ->
