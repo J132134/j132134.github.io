@@ -86,7 +86,7 @@ gulp.task 'connect', ->
     livereload: true
 
 gulp.task 'inline', ['jade', 'stylus', 'webpack'], ->
-  gulp.src path.join dist.root, '*.html'
+  gulp.src path.join dist.root, '**/*.html'
   .pipe inline()
   .pipe gulp.dest dist.root
 
