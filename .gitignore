@@ -1,9 +1,19 @@
+# Log files
+*.log
+
 # Dependency directory
-node_modules
+/node_modules/
+/bower_components/
 
 # Sublime Text project files
-*.sublime-project
-*.sublime-workspace
+/*.sublime-project
+/*.sublime-workspace
 
-# Ignore bower components
-bower_components
+# IntelliJ project files
+*.iml
+*.ipr
+*.iws
+/.idea/
+
+# Compiled files
+/dist/
