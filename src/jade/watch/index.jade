@@ -1,0 +1,42 @@
+doctype html
+html(lang='ko')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no')
+    title for Apple Watch
+    link(rel='stylesheet', type='text/css', href='/css/watch.css', inline)
+  body
+    form
+      div.labels
+        label
+          input(type='radio', name='size', value='small')
+          span 38mm
+        label
+          input(type='radio', name='size', value='large', checked)
+          span 42mm
+
+      div.labels
+        label
+          input(type='radio', name='color', value='white', checked)
+          span White
+        label
+          input(type='radio', name='color', value='black')
+          span Black
+
+      div.labels
+        label
+          input(type='radio', name='position', value='top', checked)
+          span Top
+        label
+          input(type='radio', name='position', value='bottom')
+          span Bottom
+
+      label.text: input(type='text', name='text', placeholder='TEXT')
+      label.file: input(type='file', accept='image/*')
+
+      p.help &hearts; = \u2665
+
+    div.result: img
+
+    script(src='/js/watch.js', inline)
